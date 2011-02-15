@@ -1,0 +1,8 @@
+﻿msgid "Category tree"
+msgstr "Дерево категорий"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "Goods"
+msgstr "Товары"
