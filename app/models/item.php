@@ -28,5 +28,19 @@ class Item extends AppModel
 			'conditions' => array('Item.main_pic_id=MainImage.id' => '1'),
 		)
 	);
+	
+	var $validate = array(
+		'price' => array(
+			'numeric' => array(
+			'rule' => 'numeric',
+			'message' => 'Numbers only'
+			)
+		)
+	);
+	
+	
+
+	
+	
 }
 

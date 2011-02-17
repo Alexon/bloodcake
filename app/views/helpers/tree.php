@@ -220,12 +220,23 @@ class TreeHelper extends AppHelper {
             );
             $this->__settings = array_merge($this->__settings, $elementData);
             /* Main Content */
+			if(isset($elementData['data']['Category']))
+				$elementData['data']['Category']['name'] = '<a href="'.$this->webroot.'/categories/view/'.$elementData['data']['Category']['id'].'">'.$elementData['data']['Category']['name'].'</a>';
+				
             if ($element) {
                 $content = $view->element($element,$elementData);
             } elseif ($callback) {
                 list($content) = array_map($callback, array($elementData));
             } else {
                 $content = $result[$model][$alias];
+				//hack
+				if(isset($result[$model]['id']))
+				{
+					$id = $result[$model]['id'];
+					$content = '<a href="/categories/view/'.$id.'">'.$content.'</a>';
+					if(__ADMIN)
+						$content .=  ' <small>(<a href="/categories/edit/'.$id.'">'.__('edit',1).'</a> | <a href="/categories/delete/'.$id.'">'.__('delete',1).'</a>)</small>';
+				}
             }
             if (!$content) {
                 continue;

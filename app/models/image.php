@@ -11,6 +11,15 @@ class Image extends AppModel
 			'foreignKey' => 'good_id',
 		)
 	);
+	
+	function beforeDelete()
+	{
+		$data = $this->findById($this->id);
+		$root = ROOT . '/app/webroot/img/';
+		unlink($root . $data['Image']['url']);
+		
+		return true;
+	}
 
 }
 

@@ -6,3 +6,102 @@ msgstr "Категории"
 
 msgid "Goods"
 msgstr "Товары"
+
+msgid "Title"
+msgstr "Название"
+
+msgid "Price"
+msgstr "Цена"
+
+msgid "Category"
+msgstr "Категория"
+
+msgid "Special"
+msgstr "Особое"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "edit"
+msgstr "изменить"
+
+msgid "delete"
+msgstr "удалить"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Parent category"
+msgstr "Родительская категория"
+
+msgid "No goods"
+msgstr "Не найдено товаров"
+
+msgid "Root category"
+msgstr "Корневая категория"
+
+msgid "Uncategorized"
+msgstr "Неразобрано"
+
+msgid "create category"
+msgstr "создать категорию"
+
+msgid "Create category"
+msgstr "Создать категорию"
+
+msgid "create item"
+msgstr "создать товар"
+
+msgid "Create item"
+msgstr "Создать товар"
+
+msgid "Edit item"
+msgstr "Изменить товар"
+
+msgid "Create"
+msgstr "Создать"
+
+msgid "Choose parent category"
+msgstr "Выбор родительской категории"
+
+msgid "Name your category"
+msgstr "Назовите новую категорию"
+
+msgid "Slag"
+msgstr "Латиническое словечко"
+
+msgid "not found"
+msgstr "не задано"
+
+msgid "Deleted!"
+msgstr "Удалено!"
+
+msgid "Child category"
+msgstr "Вложенные категории"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Naming"
+msgstr "Название"
+
+msgid "Disambiguation slag"
+msgstr "Неоднозначный код"
+
+msgid "Name your item"
+msgstr "Название"
+
+msgid "only digits"
+msgstr "только цифры"
+
+msgid "Images"
+msgstr "Картинки"
+
+msgid "Main image"
+msgstr "Основная картинка"
+
+msgid "add"
+msgstr "добавить"
