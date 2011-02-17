@@ -23,7 +23,7 @@ class Category extends AppModel
 	
 	
 	var $validate = array(
-		'slag' => 'alphaNumeric',
+		//'slag' => 'alphaNumeric',
 		//'parent_id' => 'numeric',
 	);
 	

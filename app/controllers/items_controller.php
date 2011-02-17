@@ -13,7 +13,7 @@ class ItemsController extends CommonController
 	{
 		$this->paginate = array(
 			'limit' => 10,
-			'fields' => array('Item.title', 'Item.price', 'Category.name', 'Item.special', 'Item.id', 'Category.id'),
+			'fields' => array('Item.title', 'Item.price', 'Category.name', 'Item.special', 'Item.id', 'Category.id', 'MainImage.url'),
 		);
 		$data = $this->paginate('Item');
 		$this->set(compact('data'));

@@ -1,0 +1,1 @@
+<h2><? __('Thanks!') ?></h2><div><? __('Thank you very much! It was very interesting. Now you can come to admin area.') ?></div><div><a href="/admin/"><? __('Come into the darkness') ?></a></div>

@@ -1,0 +1,1 @@
+<h2><? __('Greetings!') ?></h2><div><? __('Greetings to wonderly world of flourish! Click this link to create tables of application.') ?></div><div><a href="/installer/database/"><? __('Create') ?></a></div>

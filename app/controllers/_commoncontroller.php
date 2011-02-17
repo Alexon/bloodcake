@@ -3,9 +3,13 @@
 class CommonController extends AppController {
 
 var $settings;
+var $components = array('Cookie');
+
 
 function beforeFilter() 
 {
+
+
 	$this->_loadSettings();
 	$this->_setLanguage();
 	//ещё нужно считать пароль админа, чтобы проверять - админ ли
@@ -22,8 +26,8 @@ function _loadSettings()
 
 function _setLanguage()
 {
-	$lang = empty($this->settings['lang']) ? 'rus' : $this->settings['lang'];
-	$this->Session->write('Config.language', $lang);
+	$this->settings['lang'] = empty($this->settings['lang']) ? 'rus' : $this->settings['lang'];
+	$this->Session->write('Config.language', $this->settings['lang']);
 }
 
 function _checkAdmin()
@@ -34,9 +38,12 @@ function _checkAdmin()
 	{
 		$is_admin = (md5($this->settings['pass']) === $this->Cookie->read('pass'));
 	}
-$is_admin = true;	
+	else
+	{
+		$is_admin = true;	
+	}
 	if($is_admin)
-		define('__ADMIN', 1);
+		define('__ADMIN', "Really admin!");
 	else
 		define('__ADMIN', 0);
 }

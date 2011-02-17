@@ -1,5 +1,38 @@
-﻿msgid "Category tree"
+﻿msgid "English"
+msgstr "Русский"
+
+msgid "Choose site language"
+msgstr "Выберите язык сайта"
+
+msgid "Admin area"
+msgstr "Настройки"
+
+msgid "See also"
+msgstr "См. также"
+
+msgid "editable category tree"
+msgstr "управление деревом категорий"
+
+msgid "excel item loading"
+msgstr "импорт товаров из файла Excel"
+
+msgid "Your Excel table"
+msgstr "Ваша excel-таблица"
+
+msgid "Import"
+msgstr "Загрузить"
+
+msgid "Photo"
+msgstr "Фото"
+
+msgid "Protect admin area by password"
+msgstr "Защитить редактирование сайта паролем (если пароля нет, то админить сайт сможет любой посетитель)"
+
+msgid "Category tree"
 msgstr "Дерево категорий"
+
+msgid "Root"
+msgstr "Начало"
 
 msgid "Categories"
 msgstr "Категории"
@@ -105,3 +138,18 @@ msgstr "Основная картинка"
 
 msgid "add"
 msgstr "добавить"
+
+msgid "Greetings to wonderly world of flourish! Click this link to create tables of application."
+msgstr "Добро пожаловать в волшебный мир загогулин! Кликните по ссылке ниже, чтобы создать таблицы для приложения."
+
+msgid "Greetings!"
+msgstr "Приветствие!"
+
+msgid "Thanks!"
+msgstr "Спасибо!"
+
+msgid "Thank you very much! It was very interesting. Now you can come to admin area."
+msgstr "Готово. Теперь путь открыт, и вы можете вступить в логово админа."
+
+msgid "Come into the darkness"
+msgstr "Шагнуть во тьму"

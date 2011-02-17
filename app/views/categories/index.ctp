@@ -1,1 +1,1 @@
-<h2><?php __('Category tree') ?></h2><?php echo $tree->generate($this->data, array('type' => 'ol'));  ?> <? if(__ADMIN){ echo '<br />'.$html->link(__('create category',1), '/categories/create/'); } ?>
+<h2><?php __('Category tree') ?></h2><?php echo $tree->generate($this->data, array('type' => 'ol'));  ?> <? if(__ADMIN){ 	echo '<br />'.$html->link(__('create category',1), '/categories/create/'); 	?><br /><br />	<h2><? __('See also') ?></h2> 	<?= $html->link(__('editable category tree',1), '/admin/categories/') ?><?} ?>

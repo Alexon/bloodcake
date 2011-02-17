@@ -6,7 +6,7 @@ class CategoriesController extends CommonController
 {
 
 	var $name = 'Categories';
-	var $components = array('RequestHandler','Security');
+	var $components = array('RequestHandler','Security', 'Cookie');
 	var $helpers = array('Html', 'Form', 'Tree', 'Javascript');
 	
 	function beforeFilter() {
