@@ -1,6 +1,15 @@
 ﻿msgid "English"
 msgstr "Русский"
 
+msgid "Welcome!"
+msgstr "Привет!"
+
+msgid "Here be wonder flourish."
+msgstr "Здесь водятся загогулины."
+
+msgid "Dont tach me!"
+msgstr "Не трожь меня!"
+
 msgid "Choose site language"
 msgstr "Выберите язык сайта"
 

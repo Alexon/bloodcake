@@ -1,8 +1,6 @@
 <?php
 
-require_once "_commoncontroller.php";
-
-class ItemsController extends CommonController 
+class ItemsController extends AppController 
 {
 
 	var $name = 'Items';

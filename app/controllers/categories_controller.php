@@ -1,8 +1,6 @@
 <?php
 
-require_once "_commoncontroller.php";
-
-class CategoriesController extends CommonController
+class CategoriesController extends AppController
 {
 
 	var $name = 'Categories';

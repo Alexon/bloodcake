@@ -1,8 +1,6 @@
 <?php
 
-require_once "_commoncontroller.php";
-
-class AdminController extends CommonController
+class AdminController extends AppController
 {
 	var $uses = array();
 	var $components = array('Security', 'Cookie');

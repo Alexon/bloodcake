@@ -6,6 +6,7 @@ class InstallerController extends AppController {
     var $uses = array();
 
     function beforeFilter() {
+		parent::beforeFilter();
         if (file_exists(TMP.'installed.txt')) {
             echo 'Application already installed. Remove app/config/installed.txt to reinstall the application';
             exit();
