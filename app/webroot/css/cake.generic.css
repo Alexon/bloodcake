@@ -322,7 +322,7 @@ input[type=submit] {
 	font-size: 110%;
 	width: auto;
 }
-form .submit input[type=submit] {
+#content form .submit input[type=submit] {
 	background:#62af56;
 	background: -webkit-gradient(linear, left top, left bottom, from(#a8ea9c), to(#62af56));
 	background-image: -moz-linear-gradient(top, #a8ea9c, #62af56);
@@ -330,7 +330,7 @@ form .submit input[type=submit] {
 	color: #000;
 	text-shadow: #8cee7c 0px 1px 0px;
 }
-form .submit input[type=submit]:hover {
+#content form .submit input[type=submit]:hover {
 	background:#4ca83d;
 	background: -webkit-gradient(linear, left top, left bottom, from(#85e573), to(#4ca83d));
 	background-image: -moz-linear-gradient(top, #85e573, #4ca83d);
@@ -401,7 +401,7 @@ div.actions ul li a:hover {
 	text-decoration: underline;
 }
 
-input[type=submit],
+#content input[type=submit],
 div.actions ul li a,
 td.actions a {
 	font-weight:normal;

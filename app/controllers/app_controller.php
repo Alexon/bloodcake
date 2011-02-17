@@ -32,6 +32,12 @@ function _setLanguage()
 
 function _checkAdmin()
 {
+//debug($this->params);
+	if(isset($this->params['data']) and (isset($this->params['data']['login']) and isset($this->params['data']['login']['passwd']) and md5($this->params['data']['login']['passwd'])==$this->settings['pass']))
+	{
+		$this->Cookie->write('pass',md5($this->settings['pass']),true, '1 year');
+	}
+
 	$is_admin = false;
 	
 	if(!empty($this->settings['pass']))

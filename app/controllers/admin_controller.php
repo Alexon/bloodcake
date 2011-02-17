@@ -10,12 +10,11 @@ class AdminController extends AppController
 	{
 		
 		parent::beforeFilter();
-		
-		if(!__ADMIN)
+		if(!__ADMIN and $this->action!='logout')
 		//GTFO
 			$this->cakeError('error404');
 		
-		$this->Security->requirePost('login');
+		//$this->Security->requirePost('login');
 	}
 
 	function index()
@@ -147,12 +146,17 @@ class AdminController extends AppController
 	
 	function logout()
 	{	
-		
+		$this->Cookie->delete('pass');  //???
+		$this->redirect($this->referer());
 	}
 	
 	function login()
 	{
-		
+		echo 3234232;
+		//if($this->param)
+		if(md5($this->params['data']['Item']['pass'])!=$this->settings['pass'])$this->Flash('Fail', $_SERVER['HTTP_REFERER']);
+		$this->Cookie->write('pass',md5($this->settings['pass']),true, '1 year');
+		$this->redirect('/');
 	}
 
 

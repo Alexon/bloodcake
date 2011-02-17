@@ -4,6 +4,12 @@ msgstr "Русский"
 msgid "Welcome!"
 msgstr "Привет!"
 
+msgid "Login"
+msgstr "Вход"
+
+msgid "Logout"
+msgstr "Выход"
+
 msgid "Here be wonder flourish."
 msgstr "Здесь водятся загогулины."
 

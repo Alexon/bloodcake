@@ -16,9 +16,9 @@
 </div>
 
 <div id="navigation">
-	<div><a href="">Link</a></div>
-	<div><a href="">Link</a></div>
-	<? if(__ADMIN){?><div><?= $html->link(__('Admin area',1), '/admin/') ?></div><?}?>
+	<div<?= $this->params['controller']=="items" ? ' class="active"' : ''?>><?= $html->link(__('Goods',1), '/items/') ?></div>
+	<div<?= $this->params['controller']=="categories" ? ' class="active"' : ''?>><?= $html->link(__('Categories',1), '/categories/') ?></div>
+	<? if(__ADMIN){?><div<?= $this->params['controller']=="admin" ? ' class="active"' : ''?>><?= $html->link(__('Admin area',1), '/admin/') ?></div><?}?>
 </div>
 <div id="content">
 
@@ -27,6 +27,20 @@
 </div>
 
 <div id="footer">
+	<? if(!__ADMIN)
+	{
+	?>
+	<?= $form->create('login', array('url'=>$this->here)) ?>
+	<?= $form->password('passwd') ?>
+	<?= $form->submit('Login') ?>
+	<?= $form->end() ?>
+	<?
+	}
+	else
+	{
+		echo $html->link(__('Logout',1), '/admin/logout/');
+	}
+?>
 </div>
 
 </div>
